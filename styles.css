@@ -1,0 +1,224 @@
+*{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Oswald;
+}
+body{
+  margin: 50px 100px 100px;
+  background: #124559;
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* Container 1 & 2 styling */
+
+.stream{
+  display: flex;
+  gap: 20px;
+}
+.games{
+  display: flex;
+  gap: 20px;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  margin: 20px 40px;
+}
+
+.logo img{
+  width: 19em;
+  box-shadow: 5px 5px 25px lightgray;
+  border-radius: 50%;
+}
+
+.net{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 21em;
+  height: 25em;
+  background-color: #fff;
+  box-shadow: 5px 5px 25px #0000005f;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background: rgb(246, 246, 246);
+}
+.net p{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.net img{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  width: 100%;
+  border: rgb(231, 230, 230);
+  box-shadow: 5px 5px 25px #6464645f;
+}
+
+
+
+/* CONTACT SECTION styling */
+
+.mini-cont{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  justify-items: center;
+  align-items: center;
+
+  background: white;
+  border-radius: 50px;
+  height: 80px;
+  padding: 15px;
+
+  margin: 10px;
+}
+
+
+.mini-cont > div{
+  display: grid;
+  justify-items: center;
+
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h5{
+  margin-top: 0;
+}
+
+.mini-cont div a{
+  color: #000;
+}
+
+/* Hover Styles and Icons */
+
+.fa-facebook:hover{
+  color: #1877f2;
+}
+
+.fa-youtube:hover{
+  color: #FF0000;
+}
+
+.fa-twitter:hover{
+  color: skyblue;
+}
+
+.fa-tiktok:hover{
+  color: #000;
+}
+
+.fa-whatsapp:hover{
+  color: #25d366;
+}
+
+.fa-instagram:hover{
+  background: -webkit-linear-gradient(45deg, #405de6,
+      #5851db, #833ab4, #c13584, #e1306c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.copy{
+  text-align: center;
+  color: white;
+}
+
+
+/* MediaQ for responsiveness of websit */
+
+@media(max-width:810px) {
+
+  body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .stream , .games {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .net {
+    display: grid;
+    width: 15em;
+    height: 19em;
+    padding: 14px 20px;
+    align-content: center;
+      }
+    
+  .net a img {
+    margin: 20px 30px;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    }
+    
+  .net p {
+    font-size: 15px;
+    }
+
+  @media(max-width:450px) {
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    
+    .stream , .games {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    
+      h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      .mini-cont{
+        display: flex;
+        /* flex-direction: row; */
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 15px;
+        background: none;
+      }
+
+      h5{
+        display: none;
+      }
+      .logo img {
+        width: 10em;
+        box-shadow: 5px 5px 25px lightgray;
+        border-radius: 50%;
+        }
+
+  }
+  
+}
+
+
+
+
+
